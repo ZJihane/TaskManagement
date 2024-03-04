@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaskActivity">
+
+    <TextView
+        android:id="@+id/textViewDeadlineLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deadline:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextDeadline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Deadline"
+        app:layout_constraintStart_toEndOf="@id/textViewDeadlineLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewDeadlineLabel"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewDescriptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewDeadlineLabel"
+        android:padding="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Description"
+        app:layout_constraintStart_toEndOf="@id/textViewDescriptionLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewDescriptionLabel"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewDocUriLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doc URI:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewDescriptionLabel"
+        android:padding="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextDocUri"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Doc URI"
+        app:layout_constraintStart_toEndOf="@id/textViewDocUriLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewDocUriLabel"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewImgLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Image:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewDocUriLabel"
+        android:padding="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextImg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Image"
+        app:layout_constraintStart_toEndOf="@id/textViewImgLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewImgLabel"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewTitleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewImgLabel"
+        android:padding="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Title"
+        app:layout_constraintStart_toEndOf="@id/textViewTitleLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewTitleLabel"
+        android:padding="8dp"/>
+
+    <Button
+        android:id="@+id/buttonCreateTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        app:layout_constraintTop_toBottomOf="@id/editTextTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"/>
+
+    <Button
+        android:id="@+id/buttonReturnToTasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return to Tasks"
+        app:layout_constraintTop_toBottomOf="@id/buttonCreateTask"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
